@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+}
+
+.logo_skr {
+  width: 300px;
+  height: 300px;
+  
+  background-color: lightgrey;
+  overflow: hidden;
+}
+
+.black_box {
+  position: relative;
+  top: 300px;
+  left: 300px;
+  
+  animation-name: moveup;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-timing-function: ease;
+}
+
+.green_box {
+  position: relative;
+  top: -304px;
+  left: -300px;
+  
+  animation-name: slideright;
+  animation-duration: .5s;
+  animation-delay: .5s;
+  
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-timing-function: ease;
+}
+
+@keyframes moveup {
+  0% {
+    top: 300px;
+    left: 300px;
+  }
+  50% {
+    top: 0px;
+    left: 0px;
+  }
+  100%{
+    top: 0px;
+    left: 300px;
+  }
+}
+
+@keyframes slideright{
+  from {
+    top: -304px;
+    left: -300px;
+  }
+  to {
+    top: -304px;
+    left: 0px;
+  }
+}
+p {
+  float: left;
+  margin: 104px 124px;
+  font-size: 5em;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
