@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container{
+  background-color: black;
+  color: whitesmoke;
+  font-size: 25px;
+  
+  padding:30px;
+  border-radius: 60px;
+  
+  box-shadow: 0 5px 5px #aaa;
+  
+  transition: box-shadow .3s;
+}
+
+.main-container:hover {
+  box-shadow: 0 5px 15px #aaa;
+}
+
+.icon{
+  width: 30px;
+  height: 30px;
+  
+  line-height: 30px;
+  text-align: center;
+}
+
+.text {
+  font-family: sans-serif;
+  padding: 0 15px;
+}
+
+
+.main-container div {
+  display: inline-block;
+}
