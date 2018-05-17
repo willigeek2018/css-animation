@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+
+.sprite {
+  width: 150px;
+  height: 90px;
+  
+  background-image: url(sprite-2.png);
+  background-position: 0 0;
+  
+  animation-name: spriteAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2);
+}
+
+@keyframes spriteAnimation {
+  0% {
+    background-position: 0 0px;
+  }
+  100% {
+    background-position: 0 -180px;
+  }
+}
