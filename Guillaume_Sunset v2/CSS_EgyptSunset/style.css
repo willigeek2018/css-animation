@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+}
+
+/* The Viewport */
+
+.sahara {
+    
+    position: relative;
+    
+    width: 800px;
+    height: 800px;
+    
+    background: linear-gradient(#29abe2,#fff);
+    
+    margin: 0 auto;
+    border: 2px solid grey;
+        
+    overflow: hidden;
+    border-radius: 20%;
+    
+    /* Animation */
+    
+    animation-name: daynight;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+    /* 'DAYNIGHT 'Animation */
+
+@keyframes daynight {
+    0%, 20% {
+        background: linear-gradient(#29abe2,#fff);
+    }
+    
+    80%, 100% {
+        background: linear-gradient(#222b47,#7c391c);
+    }
+}
+
+
+/* Pyramid First Row */
+
+.pyramidRowOne {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    
+    
+    display: inline-block;
+    width: 0;
+    height: 0;
+    
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 90px solid #724527;
+    z-index: 4;
+    
+    /* animation */
+    
+    animation-name: nightPyramidOne;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Night pyramid one */
+
+@keyframes nightPyramidOne {
+    0%, 20% {
+        border-bottom: 90px solid #724527;
+    }
+    
+    80%, 100% {
+        border-bottom: 90px solid #331f14;
+    }
+}
+
+
+.right {
+    margin-left: 250px;
+}
+
+/* Pyramid Second Row */
+
+.pyramidRowTwo {
+    position: absolute;
+    top: 290px;
+    left: 50px;
+    
+    display: inline-block;
+    
+    width: 0;
+    height: 0;
+    
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid #895634;
+    
+    z-index: 3;
+    
+    /* animation */
+    
+    animation-name: nightPyramidTwo;
+    animation-direction: alternate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* nightPyramidTwo animation */
+
+@keyframes nightPyramidTwo {
+    0%, 20% {
+        border-bottom: 200px solid #895634;
+    }
+    
+    80%, 100% {
+        border-bottom: 200px solid #3f2716;
+    }
+}
+
+
+.rightTwo {
+    margin-left: 175px;
+    border-bottom: 200px solid #a06340;
+    z-index: 2;
+    
+    animation-name: nightPyramidThree;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* nightPyramidThree animation */
+
+@keyframes nightPyramidThree {
+    0%, 20% {
+        border-bottom: 200px solid #a06340;
+    }
+    
+    80%, 100% {
+        border-bottom: 200px solid #54351f;
+    }
+}
+
+/* Pyramid Third Row */
+
+.pyramidRowThree {
+    
+    position: absolute;
+    top: 340px;
+    left: 400px;
+    
+    display: inline-block;
+    
+    width: 0;
+    height: 0;
+    
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid #bf734c;
+    
+    z-index: 1;
+    
+    /* Animation */
+    
+    animation-name: nightPyramidFour;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+    /* 'nightPyramidFour' Animation  */
+
+@keyframes nightPyramidFour {
+    0%, 20% {
+        border-bottom: 150px solid #bf734c;
+    }
+    
+    80%, 100% {
+        border-bottom: 150px solid #684026;
+    }
+}
+
+
+/* Sand */
+
+.sand {
+    position: absolute;
+    bottom: 0;
+    
+    width: 100%;
+    height: 310px;
+    
+    background-color: #c18257;
+    z-index: 5;
+    
+    animation-name: sandnight;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+/* Sand animation */
+
+@keyframes sandnight {
+    0%, 20% {
+        background-color: #c18257;
+    }
+    
+    80%, 100% {
+        background-color: #5e412c;
+    }
+}
+
+
+/* Foreground */
+
+.foreground {
+    position: absolute;
+    bottom: 0;
+    
+    width: 500px;
+    height: 175px;
+    
+    background: url(images/Stone_Desert_Stone_Stone.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    
+    z-index: 7;
+}
+
+/*  SUN */
+
+.sun {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    
+    width: 200px;
+    height: 200px;
+    
+    background-color: #ffe66c;
+    border-radius: 50%;
+    
+    z-index: 0;
+    
+    /* animation */
+    
+    animation-name: sunsetting;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+    /* 'SUNSETTING' animation */
+
+@keyframes sunsetting {
+    0%, 20% {
+        background-color: #ffe66c;
+        top: 50px;
+        right: 50px;
+    }
+    
+    80%, 100% {
+        background-color: #cb5a00;
+        top: 300px;
+        right: 600px;
+    }
+}
+
+/* CAMELS */
+
+.camels {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 150px;
+    height: 90px;
+    
+    background-image: url(images/camelwalk.png);
+    background-position: 0 0;
+    
+    animation-name: camelwalk;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4,start);
+    animation-fill-mode: forwards;
+}
+
+/* CAMELS SPRITE ANIMATION */
+
+@keyframes camelwalk {
+    0% {
+        background-position: 0 top;
+    }
+    
+    100% {
+        background-position: 0 -360px;
+    }
+}
+
+.camelmove {
+    position: absolute;
+    bottom: 100px;
+    right: -100px;
+    
+    
+    width: 150px;
+    height: 90px;
+    
+    z-index: 6;
+    
+    animation-name: camelAdvance;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes camelAdvance {
+    0% {
+        right: -100px;
+    }
+    100% {
+        right: 800px;
+    }
+}
+
+
+
+
