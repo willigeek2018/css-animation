@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:black;
+    background-image:
+        radial-gradient(red, transparent 2px, transparent 10px),
+        radial-gradient(yellow, rgba(255,255,255,.1) 3px, transparent 10px),
+        radial-gradient(blue, transparent 2px, transparent 10px),
+        radial-gradient(green, transparent 2px, transparent 10px);
+    background-size: 550px 550px, 350px 350px, 250px 250px,         150px 150px; 
+    background-position: 0 0, 40px 60px, 130px 270px, 70px           100px;
+}
+
+.solarsystem {
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet {
+    border-radius: 200%;
+}
+.sun {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+    background-color: yellow;
+    
+    box-shadow: 0 0 50px rgba(255,255,0,1);
+}
+
+.me {
+    width: 10px;
+    height: 10px;
+    
+    margin-left: 10px;
+    
+    background-color: rosybrown;
+    
+    /* proprety*/
+    
+    transform-origin: -1100% 50%;
+    /* animation */
+    
+    animation-name: orbit;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+      /* ANIMATION ORBIT */
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ve{
+    width: 20px;
+    height: 20px;
+    
+    background-color: #DE5F25;
+    /* proprety*/
+    
+    transform-origin: -600% 50%;
+    /* animation */
+    
+    animation-name: orbit;
+    animation-duration: 1.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.te {
+    width: 40px;
+    height: 40px;
+    
+    background-image: url(images/earth.png);
+    background-size: cover;
+    /* proprety*/
+    
+    transform-origin: -350% 50%;
+    /* animation */
+    
+    animation-name: orbit;
+    animation-duration: 3.1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ma {
+    width: 30px;
+    height: 30px;
+    
+    background-color: #B53B03;
+    /* proprety*/
+    
+    transform-origin: -600% 50%;
+    /* animation */
+    
+    animation-name: orbit;
+    animation-duration: 5.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ju {
+    width: 70px;
+    height: 70px;
+    
+    background-color: #B9CBD5;
+    /* proprety*/
+    
+    transform-origin: -300% 50%;
+    /* animation */
+    
+    animation-name: orbit;
+    animation-duration: 37.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.sa {
+    width: 60px;
+    height: 60px;
+    
+    background-color: #E0CDAD;
+    /* proprety*/
+    
+    transform-origin: -466.7% 50%;
+    /* animation */
+    
+    animation-name: orbit;
+    animation-duration: 92.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ur {
+    width: 40px;
+    height: 40px;
+    
+    background-color: #C7EDF0;
+    /* proprety*/
+    
+    transform-origin: -850% 50%;
+    /* animation */
+    
+    animation-name: orbit;
+    animation-duration: 264.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ne {
+    width: 50px;
+    height: 50px;
+    
+    background-color: #3454DF;
+    /* proprety*/
+    
+    transform-origin: -760% 50%;
+    /* animation */
+    
+    animation-name: orbit;
+    animation-duration: 516.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.plu {
+    width: 10px;
+    height: 10px;
+    
+    background-color: #E9E8D2;
+    /* proprety*/
+    
+    transform-origin: -4300% 50%;
+    /* animation */
+    
+    animation-name: orbit;
+    animation-duration: 782.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/*  PLANET ORBITS */
+
+.planetOrbit1 {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+
+    width: 230px;
+    height: 230px;
+    
+    border: 1px solid #696969;
+}
+
+.planetOrbit2 {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+
+    width: 260px;
+    height: 260px;
+    
+    border: 1px solid #696969;
+}
+
+.planetOrbit3 {
+    position: absolute;
+    top: -60px;
+    left: -60px;
+
+    width: 320px;
+    height: 320px;
+    
+    border: .5px dashed #696969;
+}
+
+.planetOrbit4 {
+    position: absolute;
+    top: -95px;
+    left: -95px;
+
+    width: 390px;
+    height: 390px;
+    
+    border: 1px solid #696969;
+}
+.planetOrbit5 {
+    position: absolute;
+    top: -145px;
+    left: -145px;
+
+    width: 490px;
+    height: 490px;
+    
+    border: 1px dashed #696969;
+}
+.planetOrbit6 {
+    position: absolute;
+    top: -210px;
+    left: -210px;
+
+    width: 620px;
+    height: 620px;
+    
+    border: 1px solid #696969;
+}
+.planetOrbit7 {
+    position: absolute;
+    top: -260px;
+    left: -260px;
+
+    width: 720px;
+    height: 720px;
+    
+    border: .5px dotted white;
+}
+
+.planetOrbit8 {
+    position: absolute;
+    top: -305px;
+    left: -305px;
+
+    width: 810px;
+    height: 810px;
+    
+    border: 1px dashed #696969;
+}
+.planetOrbit9 {
+    position: absolute;
+    top: -335px;
+    left: -335px;
+
+    width: 870px;
+    height: 870px;
+    
+    border: 1px solid #696969;
+}
+
