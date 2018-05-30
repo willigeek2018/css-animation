@@ -1,0 +1,68 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: black;
+}
+
+.earth {
+  width: 200px;
+  height: 200px;
+  
+  margin-left: 100px;
+  
+  background-color: #6b93d6;
+  border-radius: 50%;
+  
+  transform: rotate(360deg);
+  transform-origin: -150% 50%;
+  
+  animation-name: earthOrbit;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes earthOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sun {
+  width: 400px;
+  height: 400px;
+  
+  background-color: #f9d71c;
+  border-radius: 50%;
+  
+  box-shadow: 0px 0px 800px yellow;
+}
+
+.mars {
+  
+  width: 100px;
+  height: 100px;
+  
+  margin-left: 50px;
+  background-color: #c1440e;
+  border-radius: 50%;
+  
+  animation-name: earthOrbit;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+  transform-origin: -550% 50%;
+}
